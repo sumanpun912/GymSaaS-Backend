@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/GymSaaS.Api/GymSaaS.Api.csproj" />
+    <Project Path="src/GymSaaS.Application/GymSaaS.Application.csproj" />
+    <Project Path="src/GymSaaS.Domain/GymSaaS.Domain.csproj" />
+    <Project Path="src/GymSaaS.Infrastructure/GymSaaS.Infrastructure.csproj" />
+  </Folder>
+</Solution>
