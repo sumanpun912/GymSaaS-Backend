@@ -1,6 +1,6 @@
 namespace GymSaaS.Application.Abstractions;
 
-/// <summary>Per-request tenant context set by middleware after validating header + JWT.</summary>
+/// Per-request tenant context set by middleware after validating header + JWT.
 public interface ICurrentTenant
 {
     Guid? TenantId { get; }

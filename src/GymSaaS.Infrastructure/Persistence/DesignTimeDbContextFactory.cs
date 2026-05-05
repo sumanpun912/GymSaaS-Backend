@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Design;
 
 namespace GymSaaS.Infrastructure.Persistence;
 
-/// <summary>Used by EF Core CLI (<c>dotnet ef</c>) when generating migrations.</summary>
+/// Used by EF Core CLI when generating migrations.
 public sealed class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<ApplicationDbContext>
 {
     private const string Url =
