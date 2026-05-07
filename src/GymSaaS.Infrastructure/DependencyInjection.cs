@@ -5,6 +5,7 @@ using GymSaaS.Infrastructure.Identity;
 using GymSaaS.Infrastructure.Options;
 using GymSaaS.Infrastructure.Persistence;
 using GymSaaS.Infrastructure.Persistence.Repositories;
+using GymSaaS.Infrastructure.Persistence.Seeding;
 using GymSaaS.Infrastructure.Tenants;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -46,6 +47,7 @@ public static class DependencyInjection
         services.AddScoped<IRoomRepository, RoomRepository>();
         services.AddScoped<IMemberRepository, MemberRepository>();
         services.AddScoped<IUnitOfWork>(sp => sp.GetRequiredService<ApplicationDbContext>());
+        services.AddScoped<DbSeeder>();
 
         return services;
     }
